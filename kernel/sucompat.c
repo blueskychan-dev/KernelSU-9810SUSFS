@@ -20,6 +20,9 @@
 #include "klog.h" // IWYU pragma: keep
 #include "ksud.h"
 #include "kernel_compat.h"
+#ifdef CONFIG_KSU_SUSFS_SUS_SU
+#include "sucompat.h"
+#endif
 
 #define SU_PATH "/system/bin/su"
 #define SH_PATH "/system/bin/sh"
